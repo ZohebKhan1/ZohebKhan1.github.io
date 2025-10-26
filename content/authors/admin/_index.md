@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Bioinformatician
+role: "Currently: Bioinformatician @"
 subtitle: University of Chicago, B.A. Genetics, June 2022
 
 # Organizations/Affiliations to show in About widget
@@ -80,42 +80,42 @@ highlight_name: true
 
 <div class="about-section">
 
-## 👋 Welcome
+## Welcome
 
 I am a **Bioinformatician** at the **Moskowitz Lab** at The University of Chicago, where I apply advanced computational methods to understand complex biological systems. My expertise lies in **bulk RNA-seq analysis** within developmental biology, with particular focus on **Trisomy 21/Down syndrome**, cardiac development, and hedgehog signaling pathways.
 
 ---
 
-## 🔬 Research Mission
+## Research Mission
 
 My work bridges computational biology and developmental genetics to uncover molecular mechanisms underlying human development and disease. I specialize in analyzing gene expression patterns in **iPSC-derived cortical neurons** and **neural crest cells**, employing cutting-edge bioinformatics tools to translate complex genomic data into biological insights.
 
 ---
 
-## 🎯 Current Focus Areas
+## Current Focus Areas
 
 <div class="focus-grid">
   <div class="focus-item">
-    <strong>🧬 Developmental Disorders</strong>
+    <strong>Developmental Disorders</strong>
     <p>Investigating gene expression dynamics in Trisomy 21/Down syndrome through comprehensive RNA-seq analysis</p>
   </div>
   <div class="focus-item">
-    <strong>❤️ Cardiac Development</strong>
+    <strong>Cardiac Development</strong>
     <p>Decoding molecular mechanisms of heart development using time-series transcriptomic data</p>
   </div>
   <div class="focus-item">
-    <strong>🧠 Neural Differentiation</strong>
+    <strong>Neural Differentiation</strong>
     <p>Analyzing hedgehog signaling pathways in neural development and iPSC differentiation</p>
   </div>
   <div class="focus-item">
-    <strong>⏱️ Temporal Dynamics</strong>
+    <strong>Temporal Dynamics</strong>
     <p>Time-series RNA-seq analysis to capture dynamic gene expression patterns</p>
   </div>
 </div>
 
 ---
 
-## 💡 Approach & Philosophy
+## Approach & Philosophy
 
 I believe in **reproducible research** and **open science** principles. My analytical pipelines combine robust statistical methods with clear visualization to make complex biological data accessible and interpretable. Every analysis is designed to be reproducible, well-documented, and scientifically rigorous.
 
