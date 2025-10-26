@@ -24,7 +24,6 @@ design:
   <div class="row">
     <div class="col-lg-4 col-md-6">
       <div class="research-card featured">
-        <div class="research-icon"><i class="fas fa-dna"></i></div>
         <h3>Trisomy 21 Gene Expression</h3>
         <p class="research-desc">Comprehensive analysis of differential gene expression patterns in Down syndrome using bulk RNA-seq to identify therapeutic targets and understand developmental impacts.</p>
         <div class="research-tags">
@@ -37,7 +36,6 @@ design:
 
     <div class="col-lg-4 col-md-6">
       <div class="research-card">
-        <div class="research-icon"><i class="fas fa-heart"></i></div>
         <h3>Cardiac Development Pathways</h3>
         <p class="research-desc">Time-series transcriptomic analysis of cardiac differentiation, focusing on key regulatory networks and signaling cascades during heart development.</p>
         <div class="research-tags">
@@ -50,7 +48,6 @@ design:
 
     <div class="col-lg-4 col-md-6">
       <div class="research-card">
-        <div class="research-icon"><i class="fas fa-brain"></i></div>
         <h3>iPSC Neuron Differentiation</h3>
         <p class="research-desc">Investigating hedgehog signaling in cortical neuron differentiation from induced pluripotent stem cells, with implications for neurodevelopmental disorders.</p>
         <div class="research-tags">
@@ -65,7 +62,6 @@ design:
   <div class="row mt-4">
     <div class="col-lg-4 col-md-6">
       <div class="research-card">
-        <div class="research-icon"><i class="fas fa-microscope"></i></div>
         <h3>ATAC-seq Integration</h3>
         <p class="research-desc">Multi-omics integration of chromatin accessibility and gene expression data to understand epigenetic regulation in development.</p>
         <div class="research-tags">
@@ -78,7 +74,6 @@ design:
 
     <div class="col-lg-4 col-md-6">
       <div class="research-card">
-        <div class="research-icon"><i class="fas fa-chart-bar"></i></div>
         <h3>Pathway Analysis Pipelines</h3>
         <p class="research-desc">Development of reproducible bioinformatics pipelines for pathway enrichment analysis and functional annotation of gene sets.</p>
         <div class="research-tags">
@@ -91,7 +86,6 @@ design:
 
     <div class="col-lg-4 col-md-6">
       <div class="research-card">
-        <div class="research-icon"><i class="fas fa-flask"></i></div>
         <h3>Neural Crest Development</h3>
         <p class="research-desc">Transcriptomic profiling of neural crest cell specification and migration, uncovering key regulatory mechanisms in craniofacial development.</p>
         <div class="research-tags">
