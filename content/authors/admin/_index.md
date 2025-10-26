@@ -18,6 +18,7 @@ superuser: true
 
 # Role/position/tagline
 role: Bioinformatician
+subtitle: University of Chicago, B.A. Genetics, June 2022
 
 # Organizations/Affiliations to show in About widget
 organizations:
