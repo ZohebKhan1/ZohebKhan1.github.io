@@ -78,27 +78,45 @@ email: 'zohebk@uchicago.edu'
 highlight_name: true
 ---
 
-**About me**
+<div class="about-section">
 
-I am a Bioinformatician at the Moskowitz Lab at The University of Chicago, where I apply advanced computational methods to understand complex biological systems. My research focuses on bulk RNA-seq analysis in the context of developmental biology, with particular emphasis on Trisomy 21/Down syndrome, cardiac development, and hedgehog signaling pathways.
+## 👋 Welcome
 
-With expertise in iPSC cortical neuron differentiation and neural crest cell development, I employ cutting-edge bioinformatics tools to investigate gene expression patterns and molecular mechanisms underlying developmental processes.
+I am a **Bioinformatician** at the **Moskowitz Lab** at The University of Chicago, where I apply advanced computational methods to understand complex biological systems. My expertise lies in **bulk RNA-seq analysis** within developmental biology, with particular focus on **Trisomy 21/Down syndrome**, cardiac development, and hedgehog signaling pathways.
 
-**Technical Expertise**
+---
 
-* **RNA-seq Analysis:** DESeq2, maSigPro, edgeR, limma
-* **Data Processing:** VST normalization, CPM filtering, apeglm shrinkage
-* **Pathway Analysis:** GSEA, GO term enrichment
-* **Visualization:** pheatmap, ggplot2, z-score winsorization
-* **Programming:** R, Bioconductor
-* **Workflow Management:** Nextflow, nf-core pipelines
-* **High Performance Computing:** SLURM job scheduling
+## 🔬 Research Mission
 
-**Research Focus**
+My work bridges computational biology and developmental genetics to uncover molecular mechanisms underlying human development and disease. I specialize in analyzing gene expression patterns in **iPSC-derived cortical neurons** and **neural crest cells**, employing cutting-edge bioinformatics tools to translate complex genomic data into biological insights.
 
-My current research integrates bioinformatics approaches to explore:
-* Gene expression dynamics in developmental disorders
-* Molecular mechanisms of cardiac development
-* Hedgehog signaling in neural development
-* Temporal gene expression patterns using time-series RNA-seq
-* Chromatin accessibility landscapes via ATAC-seq analysis
+---
+
+## 🎯 Current Focus Areas
+
+<div class="focus-grid">
+  <div class="focus-item">
+    <strong>🧬 Developmental Disorders</strong>
+    <p>Investigating gene expression dynamics in Trisomy 21/Down syndrome through comprehensive RNA-seq analysis</p>
+  </div>
+  <div class="focus-item">
+    <strong>❤️ Cardiac Development</strong>
+    <p>Decoding molecular mechanisms of heart development using time-series transcriptomic data</p>
+  </div>
+  <div class="focus-item">
+    <strong>🧠 Neural Differentiation</strong>
+    <p>Analyzing hedgehog signaling pathways in neural development and iPSC differentiation</p>
+  </div>
+  <div class="focus-item">
+    <strong>⏱️ Temporal Dynamics</strong>
+    <p>Time-series RNA-seq analysis to capture dynamic gene expression patterns</p>
+  </div>
+</div>
+
+---
+
+## 💡 Approach & Philosophy
+
+I believe in **reproducible research** and **open science** principles. My analytical pipelines combine robust statistical methods with clear visualization to make complex biological data accessible and interpretable. Every analysis is designed to be reproducible, well-documented, and scientifically rigorous.
+
+</div>
