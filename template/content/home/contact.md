@@ -13,10 +13,11 @@ subtitle:
 
 content:
   # Automatically link email and phone or display as text?
-  autolink: false
+  autolink: true
 
-  # # Contact details (edit or remove options as required)
-  email: prasenjitkarmakar52282@gmail.com
+  # Contact details (edit or remove options as required)
+  # Only showing work email
+  email: zohebkhan@uchicago.edu
 
 design:
   columns: '2'

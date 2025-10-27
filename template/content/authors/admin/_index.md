@@ -2,12 +2,12 @@
 
 
 # Display name
-title: Prasenjit Karmakar
+title: Zoheb Khan
 name_pronunciation: false
 
 # Full name (for SEO)
-first_name: Prasenjit
-last_name: Karmakar
+first_name: Zoheb
+last_name: Khan
 
 # Status emoji
 status:
@@ -17,33 +17,32 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Prime Minister's Research Fellow
+role: University of Chicago, B.A. Genetics, June 2022
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: UbiNet, IIT Kharagpur
-    url: https://cse.iitkgp.ac.in/resgrp/ubinet/
+  - name: Bioinformatician at the Moskowitz Lab
+    url: https://www.uchicago.edu/
+  - name: Department of Pediatrics and Human Genetics
+    url:
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a doctoral researcher in ubiquitous computing and sensing, currently at the IIT Kharagpur (India).
+bio: Bioinformatician in the Ivan Moskowitz Lab at the University of Chicago studying gene regulatory networks in development and disease.
 
 # Interests to show in About widget
 interests:
-  - Sensing and HCI
-  - Internet of Things
-  - Distributed Systems
-  - Machine Learning
-  - Embodied AI and LLMs
+  - Genomics & Bioinformatics
+  - Gene Regulatory Networks
+  - Developmental Biology
+  - Computational Biology
+  - Single-cell Analysis
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Computer Science and Engineering
-      institution: Indian Institute of Technology Kharagpur (India)
-      year: 2022 - Present
-    - course: Bachelors in Computer Science and Engineering
-      institution: Maulana Abul Kalam Azad University of Technology (India)
-      year: 2016 - 2020
+    - course: B.A. in Genetics
+      institution: University of Chicago
+      year: 2022
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -55,20 +54,20 @@ social:
     link: '/#contact'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/prasenjit52282
+    link: https://twitter.com/zohebk
     label: Follow me on Twitter
     display:
       header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.com/citations?user=uK96UkwAAAAJ&hl=en
+    link: https://scholar.google.com/
   - icon: github
     icon_pack: fab
-    link: https://github.com/prasenjit52282
+    link: https://github.com/ZohebKhan1
   - icon: linkedin-in
     icon_pack: fab
-    link: https://www.linkedin.com/in/prasenjit52282/
-    label: Follow me on Linkedin
+    link: https://www.linkedin.com/in/zohebkhan/
+    label: Follow me on LinkedIn
     display:
       header: true
   # Link to a PDF of your resume/CV.
@@ -87,17 +86,16 @@ highlight_name: true
 
 **About me**
 
-I am presently pursuing Ph.D. in the Department of Computer Science and Engineering at the Indian Institute of Technology Kharagpur, India. I am a member of [UbiNet: Ubiquitous Networked Systems Lab](https://cse.iitkgp.ac.in/resgrp/ubinet/). I have been awarded [Prime Minister's Fellowship](https://www.pmrf.in/) for my Doctoral Research.
+I am a Bioinformatician in the Ivan Moskowitz Lab at the University of Chicago, Department of Pediatrics and Human Genetics. My research focuses on studying Trisomy 21, Hedgehog signaling in regulation of developmental timing, and gene regulatory networks involved in atrial fibrillation and heart failure.
 
-**Open source and open data**
-* [Dalton-Dataset](https://github.com/prasenjit52282/dalton-dataset) on Indoor Air pollution and Activites, India 
-* [Bus Trajectory](https://github.com/stilllearningsoumya/bus_trajectory_dataset) Dataset for [54 feet-route](https://www.google.com/maps/dir/durgapur/54+Feet/@23.5347909,87.2863414,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x39f7710b47a89171:0x429e1bdb57e009dd!2m2!1d87.3119227!2d23.5204443!1m5!1m1!1s0x39f7720a874929a9:0x38b8e0691e176312!2m2!1d87.2837139!2d23.5482543?entry=ttu) in Durgapur, India
-* [Air Quality](https://github.com/prasenjit52282/AQuaMoHo/tree/master/Data) Dataset for two cities Durgapur and Delhi, India
-* [BuStop](https://github.com/prasenjit52282/BuStop) framework detects stay-location types for public bus
-* [AQuaMoHo](https://github.com/prasenjit52282/AQuaMoHo) framework annotate air quality from Thermo-Hygrometer
+**Research Approach**
 
-**Outreach**
+I use genomics techniques including RNA-seq, ChIP-seq, ATAC-seq, Hi-C, Micro-C, scRNA/snRNA-seq, H3K27ac ChIP, and spatial transcriptomics to understand gene regulatory networks governing disease pathogenesis during development.
 
-* [Distributed Systems](https://medium.com/@prasenjitkarmakar52282) blogs for beginners and advanced learners
-* [shardQ](https://github.com/prasenjit52282/shardQ), MQTT-clone implementation for advanced flask and docker users
-* [LKMs](https://github.com/prasenjit52282/linux_LKM) with proc and ioctl interface for kernel developers
+**Current Projects**
+
+* Investigating gene regulatory networks in cardiac development and disease
+* Analyzing Trisomy 21 effects on developmental timing
+* Studying Hedgehog signaling pathways in heart development
+* Computational analysis of multi-omics datasets
+* Single-cell transcriptomics of cardiac cell populations
