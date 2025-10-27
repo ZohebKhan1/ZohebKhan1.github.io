@@ -17,17 +17,19 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: University of Chicago, B.A. Genetics, June 2022
+role: Bioinformatician
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Bioinformatician at the Moskowitz Lab
+  - name: University of Chicago, B.A. Genetics, June 2022
     url: https://www.uchicago.edu/
+  - name: Bioinformatician @ Moskowitz Lab, University of Chicago
+    url: https://moskowitzlab.uchicago.edu/
   - name: Department of Pediatrics and Human Genetics
-    url:
+    url: https://www.uchicago.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Bioinformatician in the Ivan Moskowitz Lab at the University of Chicago studying gene regulatory networks in development and disease.
+bio: ""
 
 # Interests to show in About widget
 interests:
@@ -51,25 +53,16 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/zohebk
-    label: Follow me on Twitter
-    display:
-      header: true
+    link: 'mailto:zohebk@uchicago.edu'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.com/
+    link: https://scholar.google.com/citations?user=2gFbtqIAAAAJ&hl=en
   - icon: github
     icon_pack: fab
     link: https://github.com/ZohebKhan1
-  - icon: linkedin-in
+  - icon: researchgate
     icon_pack: fab
-    link: https://www.linkedin.com/in/zohebkhan/
-    label: Follow me on LinkedIn
-    display:
-      header: true
+    link: https://www.researchgate.net/profile/Zoheb-Khan-7
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.

@@ -307,8 +307,14 @@ ul, ol {
 }
 
 .navbar-brand {
-  font-weight: 500 !important;
+  display: none !important; /* Hide PK or site title */
+}
+
+/* Make navigation menu text larger */
+.navbar-nav .nav-link {
   font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  padding: 10px 15px !important;
 }
 
 /* Force black text even in dark mode */
@@ -348,4 +354,47 @@ ul, ol {
 :root {
   --primary: #000 !important;
   --primary-rgb: 0, 0, 0 !important;
+}
+
+/* Add Bio header and format affiliations */
+.author-card .card-subtitle:before {
+  content: "Bio";
+  display: block;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  color: #000 !important;
+}
+
+/* Format organization affiliations on separate lines */
+.author-card .card-subtitle {
+  white-space: normal !important;
+  line-height: 1.6 !important;
+}
+
+.author-card .card-subtitle span {
+  display: block !important;
+  margin-bottom: 5px !important;
+}
+
+/* Move social icons under profile picture */
+#profile .network-icon {
+  display: inline-block !important;
+  margin: 5px !important;
+}
+
+#profile ul.network-icon {
+  text-align: center !important;
+  padding: 0 !important;
+  margin-top: 15px !important;
+}
+
+/* Hide empty interests if not needed */
+.interests-div:empty {
+  display: none !important;
+}
+
+/* Clean up about section spacing */
+#about .col-12.col-lg-8 {
+  margin-top: 0 !important;
 }

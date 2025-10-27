@@ -4,26 +4,18 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: " "
-    weight: 5
-  - name: Home
-    url: '/index.html'
+  - name: About Me
+    url: '#about'
     weight: 10
-  - name: News
-    url: '/news.html'
-    weight: 30
-  - name: Background
-    url: '#cv'
-    weight: 40
-  - name: Experience
-    url: '#experience'
-    weight: 50
+  - name: Research
+    url: '#research'
+    weight: 20
   - name: Publications
-    url: '/publication.html'
-    weight: 60
-  # - name: CV
-  #   url: '/files/cv.pdf'
-  #   weight: 70
+    url: '#publications'
+    weight: 30
+  - name: CV
+    url: '/files/cv.pdf'
+    weight: 40
   
   #Sub-home menu
   # - name: About
