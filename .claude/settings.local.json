@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git submodule:*)",
+      "Read(//c/Users/zoheb/OneDrive/Desktop/github_projects/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
