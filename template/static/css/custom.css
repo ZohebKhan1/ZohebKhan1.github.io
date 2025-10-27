@@ -103,9 +103,25 @@ a:hover {
   font-size: 0.9rem !important;
 }
 
-/* Reduce font sizes globally */
+/* Reduce font sizes globally AND set all text to black */
 body {
   font-size: 0.85rem !important;
+  color: #000 !important;
+}
+
+/* Ensure all text elements are black */
+p, span, div, li, td, th, dt, dd, blockquote {
+  color: #000 !important;
+}
+
+/* Make all headings black */
+h1, h2, h3, h4, h5, h6 {
+  color: #000 !important;
+}
+
+/* Ensure form labels and inputs are black */
+label, input, textarea, select {
+  color: #000 !important;
 }
 
 /* Reduce About section text size */
@@ -199,12 +215,89 @@ h4 {
 
 .badge-primary {
   background-color: #333 !important;
+  color: #fff !important;
 }
 
 .alert-primary {
   background-color: #f5f5f5 !important;
   border-color: #ddd !important;
   color: #333 !important;
+}
+
+/* Override Wowchemy theme colors */
+.dark .text-muted {
+  color: #666 !important;
+}
+
+.text-muted {
+  color: #666 !important;
+}
+
+/* Social icons in black */
+.network-icon {
+  color: #000 !important;
+}
+
+/* Override any theme blue colors */
+.btn-outline-primary {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #000 !important;
+  border-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Ensure profile name is black */
+.portrait-title h1,
+.portrait-title h2,
+.portrait-title h3,
+.author-card .card-title {
+  color: #000 !important;
+}
+
+/* Make sure list markers are also black */
+ul, ol {
+  color: #000 !important;
+}
+
+/* Override any remaining blue theme elements */
+[class*="text-info"],
+[class*="text-primary"],
+[class*="text-success"] {
+  color: #000 !important;
+}
+
+/* Ensure navigation is black */
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #000 !important;
+}
+
+/* Card text should be black */
+.card-text,
+.card-title,
+.card-subtitle {
+  color: #000 !important;
+}
+
+/* Publication and project titles */
+.article-title a {
+  color: #000 !important;
+}
+
+.article-title a:hover {
+  color: #333 !important;
+  text-decoration: underline;
+}
+
+/* Section titles */
+.universal-wrapper h1,
+.universal-wrapper h2 {
+  color: #000 !important;
 }
 
 /* Fix navigation menu styling */
@@ -216,4 +309,43 @@ h4 {
 .navbar-brand {
   font-weight: 500 !important;
   font-size: 1.1rem !important;
+}
+
+/* Force black text even in dark mode */
+.dark body,
+.dark p,
+.dark span,
+.dark div,
+.dark li,
+.dark td,
+.dark th,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark a,
+.dark .article-title,
+.dark .card-title,
+.dark .card-text,
+.dark .card-subtitle {
+  color: #000 !important;
+}
+
+/* Ensure background stays light for black text readability */
+.dark {
+  background-color: #fff !important;
+}
+
+.dark .home-section,
+.dark .navbar,
+.dark .card {
+  background-color: transparent !important;
+}
+
+/* Override any accent colors to black */
+:root {
+  --primary: #000 !important;
+  --primary-rgb: 0, 0, 0 !important;
 }
