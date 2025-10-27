@@ -1,2 +1,3 @@
-# personal_website
+# Personal Website
 
+Personal website for Zoheb Khan, University of Chicago. B.A. Genetics, June 2022. Bioinformatician in the Ivan Moskowitz Lab at the University of Chicago studying Trisomy 21, Hedgehog signaling in regulation of developmental timing, and gene regulatory networks involved in atrial fibrillation/heart failure. Using genomics (RNA-seq, ChIP-seq, ATAC-seq, Hi-C, Micro-C, scRNA/snRNA-seq, H3K27ac ChIP, and spatial transcriptomics) to understand gene regulatory networks governing disease pathogenesis during development. UChicago.
