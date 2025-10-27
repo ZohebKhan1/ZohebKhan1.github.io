@@ -1,7 +1,24 @@
+# Hugo build files
 /public/
 /resources/_gen/
 /assets/jsconfig.json
 .hugo_build.lock
+template/public/
+template/resources/
+template/.hugo_build.lock
+
+# Python
 /__pycache__
+
+# OS files
 /**/.DS_Store
+.DS_Store
+Thumbs.db
+
+# IDE files
 .Rproj.user
+.vscode/
+.idea/
+
+# Node modules (if any)
+node_modules/

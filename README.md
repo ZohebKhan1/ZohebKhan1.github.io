@@ -1,24 +1,26 @@
-# Academic template
+# Personal Website - Zoheb Khan
 
-Simple academic template that is easy to deploy on Github page, and relatively
-easy to customise furthermore using css. Here is the [live](https://simongravelle.github.io/) version.
+Personal website for Zoheb Khan, University of Chicago. B.A. Genetics, June 2022. Bioinformatician in the Ivan Moskowitz Lab at the University of Chicago studying Trisomy 21, Hedgehog signaling in regulation of developmental timing, and gene regulatory networks involved in atrial fibrillation/heart failure. Using genomics (RNA-seq, ChIP-seq, ATAC-seq, Hi-C, Micro-C, scRNA/snRNA-seq, H3K27ac ChIP, and spatial transcriptomics) to understand gene regulatory networks governing disease pathogenesis during development. UChicago.
+
+## About the Template
+
+Built with the Hugo Academic template - Simple academic template that is easy to deploy on Github pages, and relatively easy to customize using CSS.
+
+Based on [wowchemy](https://wowchemy.com/), with custom CSS adapted from [nickballousite](https://github.com/nballou) webpage.
 
 Enter your publications as a folder in [content/publication/](content/publication/).
 
-[![image](https://user-images.githubusercontent.com/43388542/216845033-cc7b0a28-60ff-4e86-a5ce-2c93930e08e2.png)](https://simongravelle.github.io/)
+## Local Development
 
-[![image](https://user-images.githubusercontent.com/43388542/216845176-a6effb49-db58-42b2-8b36-f65d5b959e39.png)](https://simongravelle.github.io/)
+To build locally:
 
-It comes with a good looking dark mode:
-
-[![image](https://user-images.githubusercontent.com/43388542/216845058-77fe9c11-5086-494f-b83d-83d26c252a5b.png)](https://simongravelle.github.io/)
-
-Feel free to use the template, it is originaly
-from [wowchemy](https://wowchemy.com/), with some custom css
-adapted from [nickballousite](https://github.com/nballou) webpage.
-
-To build localy, type:
-
-```
+```bash
 hugo server
 ```
+
+## Features
+
+- Academic portfolio with publications, projects, and experience
+- Responsive design with dark mode support
+- SEO optimized
+- GitHub Pages deployment ready
