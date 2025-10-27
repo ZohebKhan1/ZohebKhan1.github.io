@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm:*)",
+      "Bash(git init:*)",
+      "Bash(hugo server:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(awk:*)",
+      "mcp__zen__chat",
+      "Bash(git remote set-url:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
