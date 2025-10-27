@@ -10,7 +10,8 @@
       "mcp__zen__chat",
       "Bash(git remote set-url:*)",
       "Bash(git push:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": [],
     "ask": []
