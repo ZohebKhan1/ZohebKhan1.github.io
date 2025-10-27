@@ -4,8 +4,8 @@ theme: "starter-hugo-academic"
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Prasenjit Karmakar # Website name
-baseURL: 'https://prasenjit52282.github.io/' # Website URL
+title: Zoheb Khan # Website name
+baseURL: 'https://zohebkhan1.github.io/' # Website URL
 
 ############################
 ## LANGUAGE
