@@ -312,9 +312,9 @@ ul, ol {
 
 /* Make navigation menu text larger */
 .navbar-nav .nav-link {
-  font-size: 1.1rem !important;
-  font-weight: 500 !important;
-  padding: 10px 15px !important;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  padding: 10px 20px !important;
 }
 
 /* Force black text even in dark mode */
@@ -356,25 +356,36 @@ ul, ol {
   --primary-rgb: 0, 0, 0 !important;
 }
 
-/* Add Bio header and format affiliations */
+/* Bio section formatting */
 .author-card .card-subtitle:before {
   content: "Bio";
   display: block;
-  font-size: 1.2rem !important;
-  font-weight: 600 !important;
-  margin-bottom: 10px !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  margin-top: 10px !important;
   color: #000 !important;
 }
 
-/* Format organization affiliations on separate lines */
+/* Format organization affiliations - each on its own line */
 .author-card .card-subtitle {
-  white-space: normal !important;
-  line-height: 1.6 !important;
+  white-space: pre-line !important;
+  line-height: 1.8 !important;
+  font-size: 0.95rem !important;
 }
 
 .author-card .card-subtitle span {
   display: block !important;
-  margin-bottom: 5px !important;
+  margin-bottom: 8px !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+/* Hyperlink only University of Chicago in the degree line */
+.author-card .card-subtitle span:first-child a {
+  text-decoration: none;
+  color: #000 !important;
+  border-bottom: 1px solid #000;
 }
 
 /* Move social icons under profile picture */
@@ -397,4 +408,71 @@ ul, ol {
 /* Clean up about section spacing */
 #about .col-12.col-lg-8 {
   margin-top: 0 !important;
+}
+
+/* Make section headers larger */
+#about h2 strong,
+.article-container h2 strong {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+}
+
+/* Move profile section to the right */
+#about .col-12.col-lg-4 {
+  padding-left: 30px !important;
+  padding-right: 10px !important;
+}
+
+/* Position social icons below pic, above name */
+.portrait-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portrait-title h2 {
+  order: 3;
+  margin-top: 10px !important;
+}
+
+.portrait-title .btn-group {
+  order: 2;
+  margin: 10px 0 !important;
+}
+
+ul.network-icon {
+  order: 1;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+
+/* Style the social icons */
+.network-icon li {
+  margin: 0 8px !important;
+}
+
+.network-icon .ai,
+.network-icon .fab,
+.network-icon .fas {
+  font-size: 1.5rem !important;
+  color: #000 !important;
+}
+
+/* Ensure proper Email formatting in bio */
+.author-card .card-subtitle:after {
+  content: "\A\AEmail: zohebk@uchicago.edu";
+  white-space: pre;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Remove old bio header since we're using before pseudo-element */
+.bio-header {
+  display: none;
 }

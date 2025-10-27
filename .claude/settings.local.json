@@ -18,7 +18,8 @@
       "Bash(git submodule:*)",
       "Read(//c/Users/zoheb/OneDrive/Desktop/github_projects/**)",
       "Bash(git stash:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

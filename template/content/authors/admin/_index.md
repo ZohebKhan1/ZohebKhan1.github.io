@@ -17,16 +17,16 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Bioinformatician
+role: ""
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Chicago, B.A. Genetics, June 2022
-    url: https://www.uchicago.edu/
-  - name: Bioinformatician @ Moskowitz Lab, University of Chicago
-    url: https://moskowitzlab.uchicago.edu/
-  - name: Department of Pediatrics and Human Genetics
-    url: https://www.uchicago.edu/
+  - name: B.A. Genetics, University of Chicago, 2022
+    url: ""
+  - name: Bioinformatician at the Moskowitz Lab at the University of Chicago
+    url: ""
+  - name: Department of Pediatrics & Human Genetics
+    url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: ""
@@ -54,14 +54,14 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:zohebk@uchicago.edu'
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
+  - icon: google-scholar
+    icon_pack: ai
     link: https://scholar.google.com/citations?user=2gFbtqIAAAAJ&hl=en
   - icon: github
     icon_pack: fab
     link: https://github.com/ZohebKhan1
   - icon: researchgate
-    icon_pack: fab
+    icon_pack: ai
     link: https://www.researchgate.net/profile/Zoheb-Khan-7
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
@@ -81,7 +81,7 @@ highlight_name: true
 
 I am a Bioinformatician in the Ivan Moskowitz Lab at the University of Chicago, Department of Pediatrics and Human Genetics. My research focuses on studying Trisomy 21, Hedgehog signaling in regulation of developmental timing, and gene regulatory networks involved in atrial fibrillation and heart failure.
 
-**Research Approach**
+**Research Interests**
 
 I use genomics techniques including RNA-seq, ChIP-seq, ATAC-seq, Hi-C, Micro-C, scRNA/snRNA-seq, H3K27ac ChIP, and spatial transcriptomics to understand gene regulatory networks governing disease pathogenesis during development.
 
@@ -92,3 +92,15 @@ I use genomics techniques including RNA-seq, ChIP-seq, ATAC-seq, Hi-C, Micro-C, 
 * Studying Hedgehog signaling pathways in heart development
 * Computational analysis of multi-omics datasets
 * Single-cell transcriptomics of cardiac cell populations
+
+**Personal Interests**
+
+[Content to be added]
+
+**R Packages**
+
+[Placeholder - packages in development]
+
+**Contact**
+
+Email: zohebk@uchicago.edu
