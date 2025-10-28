@@ -1,0 +1,37 @@
+# Robots.txt for Zoheb Khan Portfolio
+# https://zohebkhan1.github.io/
+
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+Crawl-delay: 0
+
+# Specifically welcome Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specifically welcome Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Specifically welcome Google Scholar Bot
+User-agent: Googlebot-Scholar
+Allow: /
+
+# Block bad bots (SEO tool crawlers, not search engines)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://zohebkhan1.github.io/sitemap.xml
+
+# Host directive (preferred domain)
+Host: https://zohebkhan1.github.io

@@ -17,14 +17,14 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'Personal page'
+    org_name: 'Moskowitz Lab, University of Chicago'
+    description: 'Zoheb Khan - Bioinformatician at the University of Chicago Moskowitz Lab specializing in genomics, RNA-seq analysis, Trisomy 21 research, Hedgehog signaling pathways, and developmental biology.'
     twitter: 'zohebk'
   analytics:
-    google_analytics: ''
+    google_analytics: 'UA-36911186-4'
     baidu_tongji: ''
   verification:
-    google: ''
+    google: ''  # Add your Google Search Console verification code here
     baidu: ''
 
 # Site header
