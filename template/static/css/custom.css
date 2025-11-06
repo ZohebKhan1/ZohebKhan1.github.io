@@ -22,10 +22,16 @@
   opacity: 0.1;
 }
 
-/* Fix profile picture and About section cutoff */
+/* Fix profile picture and About section - remove excessive padding */
 #about {
-  padding-top: 100px !important; /* Add more top padding to prevent cutoff */
-  margin-top: 50px !important;
+  padding-top: 20px !important;
+  margin-top: 0 !important;
+}
+
+/* Give profile section proper spacing */
+.portrait {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
 }
 
 .navbar {
@@ -105,8 +111,10 @@ a:hover {
 
 /* Reduce font sizes globally AND set all text to black */
 body {
-  font-size: 0.85rem !important;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-size: 1.05rem !important;
   color: #000 !important;
+  line-height: 1.6 !important;
 }
 
 /* Ensure all text elements are black */

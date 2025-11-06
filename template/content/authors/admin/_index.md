@@ -77,30 +77,4 @@ email: ''
 highlight_name: true
 ---
 
-**About me**
-
-I am a Bioinformatician in the Ivan Moskowitz Lab at the University of Chicago, Department of Pediatrics and Human Genetics. My research focuses on studying Trisomy 21, Hedgehog signaling in regulation of developmental timing, and gene regulatory networks involved in atrial fibrillation and heart failure.
-
-**Research**
-
-I use genomics techniques including RNA-seq, ChIP-seq, ATAC-seq, Hi-C, Micro-C, scRNA/snRNA-seq, H3K27ac ChIP, and spatial transcriptomics to understand gene regulatory networks governing disease pathogenesis during development.
-
-**Current Projects**
-
-* Investigating gene regulatory networks in cardiac development and disease
-* Analyzing Trisomy 21 effects on developmental timing
-* Studying Hedgehog signaling pathways in heart development
-* Computational analysis of multi-omics datasets
-* Single-cell transcriptomics of cardiac cell populations
-
-**Personal Interests**
-
-[Content to be added]
-
-**R Packages**
-
-[Placeholder - packages in development]
-
-**Contact**
-
-Email: zohebk@uchicago.edu
+Bioinformatician at the Moskowitz Lab, University of Chicago, Department of Pediatrics & Human Genetics.
