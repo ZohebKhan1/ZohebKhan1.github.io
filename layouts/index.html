@@ -1,0 +1,283 @@
+{{- define "main" -}}
+
+{{/* ============================================
+     CUSTOM TWO-COLUMN LAYOUT FOR HOMEPAGE
+     ============================================
+     This layout overrides the theme's default widget_page layout
+     to create a persistent two-column structure:
+     - LEFT COLUMN: Profile (sticky)
+     - RIGHT COLUMN: All content sections
+     ============================================ */}}
+
+{{/* Get homepage bundle and author data */}}
+{{ $home := site.GetPage "/home/index.md" }}
+{{ $author_page := site.GetPage "/authors/admin" }}
+{{ $author := $author_page.Params }}
+{{ $avatar := ($author_page.Resources.ByType "image").GetMatch "*avatar*" }}
+{{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+
+{{/* Main two-column container */}}
+<div class="main-container">
+
+  {{/* ============================================
+       LEFT COLUMN: PROFILE (STICKY)
+       ============================================ */}}
+  <div class="profile-column">
+
+    {{/* Profile Picture */}}
+    {{ if $avatar }}
+      {{ $avatar_image := $avatar.Fill "400x400 Center" }}
+      <img class="profile-avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
+           width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
+           src="{{ $avatar_image.RelPermalink }}"
+           alt="{{ $author_page.Title }}"
+           loading="eager">
+    {{ end }}
+
+    {{/* Social Icons */}}
+    <ul class="profile-social-icons" aria-label="Social media links">
+      {{ range $author.social }}
+        {{ $pack := or .icon_pack "fas" }}
+        {{ $pack_prefix := $pack }}
+        {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+          {{ $pack_prefix = "fa" }}
+        {{ end }}
+        {{ $link := .link }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = .link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        <li>
+          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}" title="{{ .icon }}">
+            <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+    {{/* Name */}}
+    <h2 class="profile-name">
+      {{- if $author.name_pronunciation -}}
+        <ruby>
+          <rb>{{ $author_page.Title }}</rb>
+          <rt>{{ $author.name_pronunciation }}</rt>
+        </ruby>
+      {{- else -}}
+        {{ $author_page.Title }}
+      {{- end -}}
+    </h2>
+
+    {{/* Education Credential */}}
+    {{ range $author.education.courses }}
+      <p class="profile-credential">
+        <strong>{{ .course }}</strong><br>
+        {{ .institution }}, {{ .year }}
+      </p>
+    {{ end }}
+
+    {{/* Organization/Department */}}
+    {{ with $author.subtitle }}
+      <p class="profile-department">{{ . | markdownify | emojify }}</p>
+    {{ end }}
+
+    {{/* Lab Affiliation */}}
+    {{ range $author.organizations }}
+      <p class="profile-organization">
+        {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+        {{ .name }}
+        {{ if .url }}</a>{{ end }}
+      </p>
+    {{ end }}
+
+    {{/* Contact Information */}}
+    <div class="profile-contact">
+      <p><strong>Email:</strong><br>
+        <a href="mailto:{{ $author.email }}">{{ $author.email }}</a>
+      </p>
+    </div>
+
+  </div>
+
+  {{/* ============================================
+       RIGHT COLUMN: CONTENT SECTIONS
+       ============================================ */}}
+  <div class="content-column">
+
+    {{/* SECTION 1: About Me (Bio from admin profile) */}}
+    <section id="about" class="content-section">
+      <h2 class="section-heading">About Me</h2>
+      <div class="section-content">
+        {{ $author_page.Content }}
+      </div>
+    </section>
+
+    {{/* SECTION 2: Research Interests */}}
+    <section id="research-interests" class="content-section">
+      <h2 class="section-heading">Research Interests</h2>
+      <div class="section-content">
+        <p>My research focuses on applying computational methods to understand developmental biology and disease mechanisms. I specialize in:</p>
+        <ul class="research-interests-list">
+          {{ range $author.interests }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+
+    {{/* SECTION 3: Featured Research */}}
+    {{ $research_highlights := $home.Resources.GetMatch "research_highlights.md" }}
+    {{ if and $research_highlights (ne $research_highlights.Params.active false) }}
+      <section id="featured-research" class="content-section">
+        <h2 class="section-heading">{{ $research_highlights.Title | default "Featured Research" }}</h2>
+        <div class="section-content">
+          {{ $research_highlights.Content }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{/* SECTION 4: Current Projects */}}
+    {{ $projects := $home.Resources.GetMatch "projects.md" }}
+    {{ if and $projects (ne $projects.Params.active false) }}
+      <section id="projects" class="content-section">
+        <h2 class="section-heading">{{ $projects.Title | default "Research Projects" }}</h2>
+        <div class="section-content">
+          {{/* Get all project pages */}}
+          {{ $query := where site.RegularPages "Type" "project" }}
+          {{ $count := len $query }}
+          {{ if gt $count 0 }}
+            <div class="projects-grid">
+              {{ range $query }}
+                <div class="project-card">
+                  {{ if .Params.image }}
+                    {{ $image := .Resources.GetMatch .Params.image }}
+                    {{ if $image }}
+                      {{ $image_resized := $image.Fill "400x250" }}
+                      <img src="{{ $image_resized.RelPermalink }}" alt="{{ .Title }}" class="project-image">
+                    {{ end }}
+                  {{ end }}
+                  <h3 class="project-title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  </h3>
+                  <p class="project-summary">{{ .Params.summary | default .Summary }}</p>
+                  {{ with .Params.tags }}
+                    <div class="project-tags">
+                      {{ range . }}
+                        <span class="tag">{{ . }}</span>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          {{ else }}
+            <p>Research projects and methodological developments focused on RNA-seq analysis, developmental biology, and computational genomics.</p>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{/* SECTION 5: Experience */}}
+    {{ $experience := $home.Resources.GetMatch "experience.md" }}
+    {{ if and $experience (ne $experience.Params.active false) }}
+      <section id="experience" class="content-section">
+        <h2 class="section-heading">{{ $experience.Title | default "Experience" }}</h2>
+        <div class="section-content">
+          <div class="experience-timeline">
+            {{ range $experience.Params.experience }}
+              <div class="experience-item">
+                <div class="experience-date">
+                  {{ .date_start | time.Format ($experience.Params.date_format | default "Jan 2006") }}
+                  {{ if .date_end }}
+                    - {{ .date_end | time.Format ($experience.Params.date_format | default "Jan 2006") }}
+                  {{ else }}
+                    - Present
+                  {{ end }}
+                </div>
+                <h3 class="experience-title">{{ .title }}</h3>
+                <p class="experience-company">
+                  {{ with .company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+                  {{ .company }}
+                  {{ if .company_url }}</a>{{ end }}
+                  {{ with .location }} • {{ . }}{{ end }}
+                </p>
+                {{ with .description }}
+                  <div class="experience-description">
+                    {{ . | markdownify }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{/* SECTION 6: Publications */}}
+    {{ $publications := $home.Resources.GetMatch "publications.md" }}
+    {{ if and $publications (ne $publications.Params.active false) }}
+      <section id="publications" class="content-section">
+        <h2 class="section-heading">{{ $publications.Title | default "Publications" }}</h2>
+        <div class="section-content">
+          {{/* Get publications */}}
+          {{ $pubs := where site.RegularPages "Type" "publication" }}
+          {{ $count := $publications.Params.content.count | default 0 }}
+          {{ $order := $publications.Params.content.order | default "desc" }}
+
+          {{ if eq $order "desc" }}
+            {{ $pubs = sort $pubs "Date" "desc" }}
+          {{ else }}
+            {{ $pubs = sort $pubs "Date" "asc" }}
+          {{ end }}
+
+          {{ if gt $count 0 }}
+            {{ $pubs = first $count $pubs }}
+          {{ end }}
+
+          {{ if gt (len $pubs) 0 }}
+            <div class="publications-list">
+              {{ range $pubs }}
+                <div class="publication-item">
+                  <h3 class="publication-title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  </h3>
+                  <p class="publication-authors">
+                    {{ delimit .Params.authors ", " }}
+                  </p>
+                  {{ with .Params.publication }}
+                    <p class="publication-venue">{{ . | markdownify }}</p>
+                  {{ end }}
+                  {{ with .Params.abstract }}
+                    <p class="publication-abstract">{{ . | truncate 200 }}</p>
+                  {{ end }}
+                  <div class="publication-links">
+                    {{ with .Params.url_pdf }}
+                      <a href="{{ . }}" class="btn-pub" target="_blank" rel="noopener">PDF</a>
+                    {{ end }}
+                    {{ with .Params.url_code }}
+                      <a href="{{ . }}" class="btn-pub" target="_blank" rel="noopener">Code</a>
+                    {{ end }}
+                    {{ with .Params.doi }}
+                      <a href="https://doi.org/{{ . }}" class="btn-pub" target="_blank" rel="noopener">DOI</a>
+                    {{ end }}
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          {{ else }}
+            <p>Publications currently in preparation and under review. Check back soon for updates on research outputs.</p>
+            <p class="text-muted">View my <a href="{{ $author.social | where "icon" "google-scholar" | first | .link }}" target="_blank" rel="noopener">Google Scholar profile</a> for the latest publications.</p>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+  </div>
+  {{/* End content-column */}}
+
+</div>
+{{/* End main-container */}}
+
+{{- end -}}
