@@ -58,6 +58,8 @@ locale:
   address_format: en-us
 
 # Site features
+# Note: privacy_pack at root level is needed for Google Analytics template compatibility
+privacy_pack: false
 
 features:
   syntax_highlighter:
