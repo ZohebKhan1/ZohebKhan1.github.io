@@ -4,7 +4,8 @@
 widget: about
 
 # Activate this widget? true/false
-active: true
+# DISABLED: Using custom layouts/index.html for two-column layout
+active: false
 
 # This file represents a page section.
 headless: true

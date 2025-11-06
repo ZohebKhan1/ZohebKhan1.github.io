@@ -1,5 +1,6 @@
 ---
-active: true
+# DISABLED: Using custom layouts/index.html for two-column layout
+active: false
 widget: portfolio
 
 # This file represents a page section.

@@ -1,5 +1,6 @@
 ---
-active: true
+# DISABLED: Using custom layouts/index.html for two-column layout
+active: false
 
 # An instance of the Experience widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
