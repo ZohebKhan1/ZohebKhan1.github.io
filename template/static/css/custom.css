@@ -124,18 +124,18 @@ label, input, textarea, select {
   color: #000 !important;
 }
 
-/* Reduce About section text size */
+/* INCREASE About section text size (user requested larger text) */
 #about .main-content {
-  font-size: 0.85rem !important;
+  font-size: 1.1rem !important;
 }
 
 #about p {
-  font-size: 0.85rem !important;
-  line-height: 1.5 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
 }
 
 #about .bio {
-  font-size: 0.85rem !important;
+  font-size: 1.1rem !important;
 }
 
 /* Reduce section title sizes */
@@ -312,7 +312,7 @@ ul, ol {
 
 /* Make navigation menu text larger */
 .navbar-nav .nav-link {
-  font-size: 1.3rem !important;
+  font-size: 1.5rem !important;
   font-weight: 600 !important;
   padding: 10px 20px !important;
 }
@@ -367,18 +367,18 @@ ul, ol {
   color: #000 !important;
 }
 
-/* Format organization affiliations - each on its own line */
+/* Format organization affiliations - prevent text wrapping */
 .author-card .card-subtitle {
-  white-space: pre-line !important;
+  white-space: normal !important;
   line-height: 1.8 !important;
-  font-size: 0.95rem !important;
+  font-size: 1rem !important;
 }
 
 .author-card .card-subtitle span {
-  display: block !important;
+  display: inline-block !important;
   margin-bottom: 8px !important;
   white-space: nowrap !important;
-  overflow: visible !important;
+  min-width: 100% !important;
 }
 
 /* Hyperlink only University of Chicago in the degree line */

@@ -1,3 +1,4 @@
 # Hugo.toml simplified - analytics moved to params.yaml
 # baseURL and other settings in config/_default/config.yaml
-googleAnalytics = 'UA-36911186-4'
+# Google Analytics ID - update with your own GA4 tracking ID when available
+googleAnalytics = ''
