@@ -24,6 +24,18 @@
        ============================================ */}}
   <div class="profile-column">
 
+    {{/* Name - ABOVE picture */}}
+    <h2 class="profile-name">
+      {{- if $author.name_pronunciation -}}
+        <ruby>
+          <rb>{{ $author_page.Title }}</rb>
+          <rt>{{ $author.name_pronunciation }}</rt>
+        </ruby>
+      {{- else -}}
+        {{ $author_page.Title }}
+      {{- end -}}
+    </h2>
+
     {{/* Profile Picture */}}
     {{ if $avatar }}
       {{ $avatar_image := $avatar.Fill "400x400 Center" }}
@@ -33,6 +45,9 @@
            alt="{{ $author_page.Title }}"
            loading="eager">
     {{ end }}
+
+    {{/* Role/Title - BELOW picture */}}
+    <p class="profile-role">Bioinformatician</p>
 
     {{/* Social Icons */}}
     <ul class="profile-social-icons" aria-label="Social media links">
@@ -57,18 +72,6 @@
         </li>
       {{ end }}
     </ul>
-
-    {{/* Name */}}
-    <h2 class="profile-name">
-      {{- if $author.name_pronunciation -}}
-        <ruby>
-          <rb>{{ $author_page.Title }}</rb>
-          <rt>{{ $author.name_pronunciation }}</rt>
-        </ruby>
-      {{- else -}}
-        {{ $author_page.Title }}
-      {{- end -}}
-    </h2>
 
     {{/* Education Credential */}}
     {{ range $author.education.courses }}

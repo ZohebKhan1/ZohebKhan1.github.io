@@ -2,8 +2,8 @@
    CUSTOM STYLES FOR ZOHEB KHAN ACADEMIC WEBSITE
    =========================== */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Import Google Fonts - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* ===========================
    ROOT VARIABLES & THEME
@@ -38,6 +38,7 @@
    =========================== */
 * {
   transition: all 0.3s var(--transition-smooth);
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 html {
@@ -46,7 +47,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   animation: pageLoad 0.8s ease-out;
 }
 
@@ -809,12 +810,16 @@ a:not(.btn):not(.nav-link):hover {
 .profile-name {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--text-primary);
-  margin: 15px 0 10px 0;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+/* Profile role/title */
+.profile-role {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 15px 0 20px 0;
 }
 
 /* Profile credentials/education */
