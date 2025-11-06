@@ -3,7 +3,7 @@ widget: blank
 headless: true
 active: true
 weight: 25
-title: Research
+title: Projects
 subtitle: ''
 
 design:
