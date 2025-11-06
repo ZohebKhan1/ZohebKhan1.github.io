@@ -1,4 +1,3 @@
-baseurl = "/"
-relativeURLs = true
-uglyURLs = true
+# Hugo.toml simplified - analytics moved to params.yaml
+# baseURL and other settings in config/_default/config.yaml
 googleAnalytics = 'UA-36911186-4'
