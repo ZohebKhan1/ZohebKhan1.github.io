@@ -188,9 +188,24 @@ h5, h6 {
   font-weight: 400 !important;
 }
 
-/* Reduce list item sizes in About section */
+/* SOCIAL ICONS: Large, uniform size, even spacing */
 .network-icon {
-  font-size: 1.2rem !important;
+  font-size: 1.8rem !important;
+  margin: 0 12px !important;
+  color: #000 !important;
+}
+
+ul.network-icon {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 20px 0 !important;
+  padding: 0 !important;
+}
+
+.network-icon li {
+  display: inline-block !important;
+  margin: 0 12px !important;
 }
 
 .interests-div ul li,
@@ -334,12 +349,12 @@ ul, ol {
   display: none !important; /* Hide PK or site title */
 }
 
-/* Make navigation menu text larger - REGULAR Roboto (not bold) */
+/* NAVIGATION: 50% smaller, subtle, unobtrusive */
 .navbar-nav .nav-link {
   font-family: 'Roboto', sans-serif !important;
-  font-size: 1.5rem !important;
+  font-size: 0.9rem !important;
   font-weight: 400 !important;
-  padding: 10px 20px !important;
+  padding: 8px 15px !important;
 }
 
 /* Force black text even in dark mode */
@@ -392,18 +407,18 @@ ul, ol {
   color: #000 !important;
 }
 
-/* Format organization affiliations - prevent text wrapping */
+/* ORGANIZATION TEXT: Larger, clean spacing, below icons */
 .author-card .card-subtitle {
-  white-space: normal !important;
-  line-height: 1.8 !important;
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
+  line-height: 2 !important;
+  margin-top: 20px !important;
+  text-align: center !important;
 }
 
 .author-card .card-subtitle span {
-  display: inline-block !important;
-  margin-bottom: 8px !important;
+  display: block !important;
+  margin-bottom: 10px !important;
   white-space: nowrap !important;
-  min-width: 100% !important;
 }
 
 /* Hyperlink only University of Chicago in the degree line */
@@ -507,3 +522,84 @@ ul.network-icon {
 .bio-header {
   display: none;
 }
+/* ========================================
+   CLEAN MINIMALIST REDESIGN - PHASE 10
+   ======================================== */
+
+/* HIDE: Education section */
+.education-div {
+  display: none !important;
+}
+
+/* HIDE: Interests section */
+.interests-div {
+  display: none !important;
+}
+
+/* HIDE: Download CV button */
+.btn-group {
+  display: none !important;
+}
+
+/* HIDE: "About" title/banner above profile picture */
+#about h1.section-heading {
+  display: none !important;
+}
+
+/* NAME ABOVE PICTURE: Larger, NOT bold, clean spacing */
+.portrait-title h2 {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  color: #000 !important;
+}
+
+/* PROFILE PICTURE: Proper spacing */
+.portrait {
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+  max-width: 200px !important;
+}
+
+/* CONTENT SECTION HEADERS: BOLD and LARGE */
+.home-section .section-heading h1,
+.home-section h1 {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 25px !important;
+  margin-top: 0 !important;
+  color: #000 !important;
+}
+
+/* CONTENT SECTIONS: Generous spacing between sections */
+.home-section {
+  padding: 50px 0 !important;
+  margin-bottom: 40px !important;
+}
+
+/* PROFILE SECTION: Clean layout, no clutter */
+#about .col-12.col-lg-4 {
+  padding-top: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+/* CONTENT AREA: Proper spacing from profile */
+#about .col-12.col-lg-8 {
+  padding-left: 40px !important;
+  margin-top: 0 !important;
+}
+
+/* Ensure nothing touches or overlaps */
+.portrait-title > * {
+  margin: 15px 0 !important;
+}
+
+/* Remove bio text that appeared below picture */
+.author-card .card-text {
+  display: none !important;
+}
+

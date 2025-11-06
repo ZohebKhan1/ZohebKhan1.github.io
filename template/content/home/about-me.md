@@ -3,7 +3,7 @@ widget: blank
 headless: true
 active: true
 weight: 15
-title: About Me
+title: About me
 subtitle: ''
 
 design:

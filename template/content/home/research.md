@@ -3,7 +3,7 @@ widget: blank
 headless: true
 active: true
 weight: 20
-title: Research Interests
+title: Research interests
 subtitle: ''
 
 design:

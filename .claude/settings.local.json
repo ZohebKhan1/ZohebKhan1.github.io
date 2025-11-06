@@ -22,7 +22,8 @@
       "Bash(ls:*)",
       "Bash(hugo:*)",
       "Bash(cat:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
