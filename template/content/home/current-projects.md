@@ -1,7 +1,8 @@
 ---
 widget: blank
 headless: true
-active: true
+# DISABLED: Using custom layouts/index.html
+active: false
 weight: 25
 title: Current projects
 subtitle: ''
